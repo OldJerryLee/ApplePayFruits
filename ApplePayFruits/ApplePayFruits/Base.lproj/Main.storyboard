@@ -7,14 +7,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fruit List Table View Controller-->
+        <!--Fruit Store-->
         <scene sceneID="qnv-qV-dSP">
             <objects>
                 <tableViewController id="Mcm-bp-MBU" customClass="FruitListTableViewController" customModule="ApplePayFruits" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bw6-2g-pk8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.6588235294" green="0.87450980389999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="ys8-rx-2hz" customClass="FruitCell" customModule="ApplePayFruits" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
@@ -25,19 +25,19 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XY-4a-tfz">
                                             <rect key="frame" x="132" y="10" width="243" height="32"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                            <color key="textColor" red="0.93725490196078431" green="0.72549019607843135" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 30,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0w-DK-u5h">
                                             <rect key="frame" x="132" y="86" width="251" height="24"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <color key="textColor" red="0.93333333333333335" green="0.56862745098039214" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="syw-WZ-fm0">
                                             <rect key="frame" x="16" y="10" width="100" height="100"/>
-                                            <color key="backgroundColor" red="0.6588235294" green="0.87450980389999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="DIE-UL-v6f"/>
                                                 <constraint firstAttribute="height" constant="100" id="gEe-uc-I2z"/>
@@ -55,7 +55,7 @@
                                         <constraint firstAttribute="trailing" secondItem="B0w-DK-u5h" secondAttribute="trailing" id="wZe-1e-kOP"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.6588235294" green="0.87450980389999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="fruitImage" destination="syw-WZ-fm0" id="fAK-jD-vZj"/>
                                     <outlet property="priceLabel" destination="B0w-DK-u5h" id="JQf-ps-R0m"/>
@@ -69,7 +69,7 @@
                             <outlet property="delegate" destination="Mcm-bp-MBU" id="36Q-4x-s2E"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="vqe-h5-OA0"/>
+                    <navigationItem key="navigationItem" title="Fruit Store" id="vqe-h5-OA0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jaj-5D-wCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +103,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.92941176469999998" green="0.95686274510000002" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nws-r6-1et" firstAttribute="centerX" secondItem="fFP-pH-w4i" secondAttribute="centerX" id="8ra-gd-koT"/>
                             <constraint firstItem="7mx-Vo-IZn" firstAttribute="top" secondItem="QX5-G9-4fX" secondAttribute="bottom" constant="8" id="eY6-XU-hDt"/>
@@ -145,6 +145,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fruit03" width="1124" height="624"/>
+        <image name="fruit03" width="562" height="312"/>
     </resources>
 </document>

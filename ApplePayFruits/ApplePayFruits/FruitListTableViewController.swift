@@ -13,17 +13,17 @@ class FruitListTableViewController: UITableViewController {
     var fruitList = [
         Fruit(   image: UIImage(named: "fruit01"),
                 title: "Cherry",
-                price: 54.00,
+                price: 22.00,
                 description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
 
         Fruit(   image: UIImage(named: "fruit02"),
         title: "Orange",
-        price: 54.00,
+        price: 120.00,
         description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
 
         Fruit(   image: UIImage(named: "fruit03"),
         title: "Banana",
-        price: 54.00,
+        price: 74.00,
         description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
 
         Fruit(   image: UIImage(named: "fruit04"),
@@ -33,12 +33,12 @@ class FruitListTableViewController: UITableViewController {
 
         Fruit(   image: UIImage(named: "fruit05"),
         title: "Strawberry",
-        price: 54.00,
+        price: 14.00,
         description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
 
         Fruit(   image: UIImage(named: "fruit06"),
         title: "Grape",
-        price: 54.00,
+        price: 38.00,
         description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
     ]
 
