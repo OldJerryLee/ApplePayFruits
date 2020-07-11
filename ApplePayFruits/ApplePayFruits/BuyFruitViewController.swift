@@ -10,10 +10,10 @@ import UIKit
 
 class BuyFruitViewController: UIViewController {
 
-    @IBOutlet weak var swagPriceLabel: UILabel!
-    @IBOutlet weak var swagTitleLabel: UILabel!
-    @IBOutlet weak var swagImage: UIImageView!
-    @IBOutlet weak var applePayButton: UIButton!
+    @IBOutlet weak var fruitPriceLabel: UILabel!
+    @IBOutlet weak var fruitTitleLabel: UILabel!
+    @IBOutlet weak var fruitImage: UIImageView!
+    @IBOutlet weak var buyButton: UIButton!
 
     var fruit: Fruit! {
         didSet {
@@ -29,10 +29,10 @@ class BuyFruitViewController: UIViewController {
         }
 
         self.title = fruit.title
-        self.swagPriceLabel.text = "$" + fruit.priceString
-        self.swagImage.image = fruit.image
-        self.swagTitleLabel.text = fruit.title
-        swagImage.layer.cornerRadius = swagImage.frame.height/2
+        self.fruitPriceLabel.text = "$" + fruit.priceString
+        self.fruitImage.image = fruit.image
+        self.fruitTitleLabel.text = fruit.title
+        fruitImage.layer.cornerRadius = fruitImage.frame.height/2
     }
 
     override func viewDidLoad() {

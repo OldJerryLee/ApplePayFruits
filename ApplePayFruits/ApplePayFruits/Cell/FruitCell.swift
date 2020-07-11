@@ -15,7 +15,5 @@ class FruitCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
-        fruitImage.layer.cornerRadius = fruitImage.frame.height/2
     }
 }
