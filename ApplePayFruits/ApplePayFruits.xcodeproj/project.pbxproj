@@ -28,7 +28,7 @@
 		6126794024B7EF0800E1EB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6126794924B7F0CE00E1EB41 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		6126794B24B7F19E00E1EB41 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
-		6126794D24B7FE1F00E1EB41 /* FruitListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FruitListTableViewController.swift; path = ApplePayFruits/FruitListTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		6126794D24B7FE1F00E1EB41 /* FruitListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FruitListTableViewController.swift; path = ApplePayFruits/View/FruitListTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		6126794F24B801C500E1EB41 /* BuyFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyFruitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,26 +62,17 @@
 		6126793124B7EF0400E1EB41 /* ApplePayFruits */ = {
 			isa = PBXGroup;
 			children = (
+				80CE8B6224BB4EE800EF0BAB /* View */,
 				6126794824B7F0B900E1EB41 /* Cell */,
 				6126794724B7F0B200E1EB41 /* Model */,
-				6126794624B7F09500E1EB41 /* Supporting Files */,
 				6126793224B7EF0400E1EB41 /* AppDelegate.swift */,
-				6126794D24B7FE1F00E1EB41 /* FruitListTableViewController.swift */,
 				6126793424B7EF0400E1EB41 /* SceneDelegate.swift */,
 				6126793824B7EF0400E1EB41 /* Main.storyboard */,
 				6126793B24B7EF0800E1EB41 /* Assets.xcassets */,
 				6126793D24B7EF0800E1EB41 /* LaunchScreen.storyboard */,
-				6126794F24B801C500E1EB41 /* BuyFruitViewController.swift */,
 				6126794024B7EF0800E1EB41 /* Info.plist */,
 			);
 			path = ApplePayFruits;
-			sourceTree = "<group>";
-		};
-		6126794624B7F09500E1EB41 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6126794724B7F0B200E1EB41 /* Model */ = {
@@ -98,6 +89,15 @@
 				6126794B24B7F19E00E1EB41 /* FruitCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		80CE8B6224BB4EE800EF0BAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6126794D24B7FE1F00E1EB41 /* FruitListTableViewController.swift */,
+				6126794F24B801C500E1EB41 /* BuyFruitViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,11 +323,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3X5LUYPC4;
 				INFOPLIST_FILE = ApplePayFruits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabriciopujol.ApplePayFruits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appFruits.ApplePayFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,11 +342,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3X5LUYPC4;
 				INFOPLIST_FILE = ApplePayFruits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabriciopujol.ApplePayFruits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appFruits.ApplePayFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

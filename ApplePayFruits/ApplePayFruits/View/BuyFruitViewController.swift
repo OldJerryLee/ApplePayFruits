@@ -33,6 +33,8 @@ class BuyFruitViewController: UIViewController {
         self.fruitImage.image = fruit.image
         self.fruitTitleLabel.text = fruit.title
         fruitImage.layer.cornerRadius = fruitImage.frame.height/2
+
+        buyButton.layer.cornerRadius = 7
     }
 
     override func viewDidLoad() {

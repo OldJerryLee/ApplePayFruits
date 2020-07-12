@@ -102,10 +102,27 @@
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1h-hY-g5I">
+                                <rect key="frame" x="107" y="627" width="200" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="tqa-P5-D9h"/>
+                                    <constraint firstAttribute="height" constant="45" id="zM9-Yv-KQM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="BUY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseWithSender:" destination="Ral-WM-DbF" eventType="touchUpInside" id="lMh-1V-QAS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nws-r6-1et" firstAttribute="centerX" secondItem="fFP-pH-w4i" secondAttribute="centerX" id="8ra-gd-koT"/>
+                            <constraint firstItem="j1h-hY-g5I" firstAttribute="centerX" secondItem="fFP-pH-w4i" secondAttribute="centerX" id="Gy1-kg-1cV"/>
+                            <constraint firstItem="j1h-hY-g5I" firstAttribute="centerY" secondItem="fFP-pH-w4i" secondAttribute="centerY" multiplier="1.45" id="I5G-dD-3Bl"/>
                             <constraint firstItem="7mx-Vo-IZn" firstAttribute="top" secondItem="QX5-G9-4fX" secondAttribute="bottom" constant="8" id="eY6-XU-hDt"/>
                             <constraint firstItem="QX5-G9-4fX" firstAttribute="centerX" secondItem="fFP-pH-w4i" secondAttribute="centerX" id="r0f-nm-Zx5"/>
                             <constraint firstItem="7mx-Vo-IZn" firstAttribute="centerX" secondItem="fFP-pH-w4i" secondAttribute="centerX" id="y6V-Ce-4Ci"/>
@@ -116,6 +133,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mdX-Lo-pQg"/>
                     <connections>
+                        <outlet property="buyButton" destination="j1h-hY-g5I" id="YYd-eD-Tjs"/>
                         <outlet property="fruitImage" destination="QX5-G9-4fX" id="kvS-j9-pQg"/>
                         <outlet property="fruitPriceLabel" destination="nws-r6-1et" id="JiU-Jg-G9y"/>
                         <outlet property="fruitTitleLabel" destination="7mx-Vo-IZn" id="HBG-WO-qZx"/>
