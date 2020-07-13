@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Captura de Tela 2020-07-09 às 22.00.36-1.png",
+      "filename" : "fruit04.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Captura de Tela 2020-07-09 às 22.00.36-3.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Captura de Tela 2020-07-09 às 22.00.36-4.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
