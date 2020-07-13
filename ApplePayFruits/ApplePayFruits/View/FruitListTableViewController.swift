@@ -11,35 +11,35 @@ import UIKit
 class FruitListTableViewController: UITableViewController {
 
     var fruitList = [
-        Fruit(   image: UIImage(named: "fruit01"),
+        Fruit(   image: UIImage(named: "fruit04"),
                 title: "Cherry",
                 price: 22.00,
-                description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
+                description: "Hi! I am a delicious Cherry, please buy me!!!"),
 
-        Fruit(   image: UIImage(named: "fruit02"),
+        Fruit(   image: UIImage(named: "fruit07"),
         title: "Orange",
         price: 120.00,
-        description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
-
-        Fruit(   image: UIImage(named: "fruit03"),
-        title: "Banana",
-        price: 74.00,
-        description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
-
-        Fruit(   image: UIImage(named: "fruit04"),
-        title: "Apple",
-        price: 54.00,
-        description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
+        description: "Hi! I am a delicious Orange, please buy me!!!"),
 
         Fruit(   image: UIImage(named: "fruit05"),
+        title: "Banana",
+        price: 74.00,
+        description: "Hi! I am a delicious Banana, please buy me!!!"),
+
+        Fruit(   image: UIImage(named: "fruit03"),
+        title: "Apple",
+        price: 54.00,
+        description: "Hi! I am a delicious Apple, please buy me!!!"),
+
+        Fruit(   image: UIImage(named: "fruit09"),
         title: "Strawberry",
         price: 14.00,
-        description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
+        description: "Hi! I am a delicious Strawberry, please buy me!!!"),
 
-        Fruit(   image: UIImage(named: "fruit06"),
+        Fruit(   image: UIImage(named: "fruit01"),
         title: "Grape",
         price: 38.00,
-        description: "This book is for beginner to advanced iOS developers. Whether you are a complete beginner to making iOS games, or an advanced iOS developer looking to learn about Sprite Kit, you will learn a lot from this book!"),
+        description: "Hi! I am a delicious Grape, please buy me!!!"),
     ]
 
     // MARK: - Segues

@@ -13,7 +13,11 @@ class BuyFruitViewController: UIViewController {
     @IBOutlet weak var fruitPriceLabel: UILabel!
     @IBOutlet weak var fruitTitleLabel: UILabel!
     @IBOutlet weak var fruitImage: UIImageView!
-    @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var buyButton: UIButton! {
+        didSet{
+            buyButton.layer.cornerRadius = buyButton.frame.height/2
+        }
+    }
 
     var fruit: Fruit! {
         didSet {
