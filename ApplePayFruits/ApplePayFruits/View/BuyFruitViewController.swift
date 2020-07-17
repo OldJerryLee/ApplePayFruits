@@ -58,8 +58,8 @@ class BuyFruitViewController: UIViewController {
         if PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: paymentMethods) {
             
             let request = PKPaymentRequest()
-            request.currencyCode = "USD" // 1
-            request.countryCode = "US" // 2
+            request.currencyCode = "BRL" // 1
+            request.countryCode = "BR" // 2
             request.merchantIdentifier = "merchant.com.appFruitsTest.ApplePayFruits" // 3
             request.merchantCapabilities = .capability3DS // 4
             request.supportedNetworks = paymentMethods // 5
@@ -87,7 +87,58 @@ extension BuyFruitViewController: PKPaymentAuthorizationViewControllerDelegate {
     
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
         
-        completion(.success)
+        // 1: Define a chave de testes
+        Stripe.setDefaultPublishableKey("pk_test_51H3NJ1KLN7LXpuRl312WQGRf1fhNyu3A3fKerUNzhmR6tiy18zHkLdK3g643flir1M77vKR1z854sMOfgGZIyO8C00q3jW0NlH")
+        
+        // 2: Cria o token do Stripe
+        STPAPIClient.shared().createToken(with: payment) { (token, error) in
+            
+            // 3: Checamos se houve algum erro na criação do token
+            if error != nil {
+                print("\(String(describing: error?.localizedDescription))")
+                completion(PKPaymentAuthorizationStatus.failure)
+            }
+
+            else {
+                
+                // 4: Definimos o endereço da URL
+                let url = URL(string: "https://shoesstoretest.herokuapp.com/pay")
+                
+                var request = URLRequest(url: url!)
+                request.httpMethod = "POST"
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.setValue("application/json", forHTTPHeaderField: "Accept")
+                
+                // 5: Adicionamos os atributos do JSON
+                let body: [String: Any] = [
+                    "stripeToken": token?.tokenId ?? "",
+                    "amount": self.fruit.price.multiplying(by: 100),
+                    "description": self.fruit.title
+                ]
+                
+                request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: JSONSerialization.WritingOptions())
+                
+                let session = URLSession.shared
+
+                let dataTask = session.dataTask(with: request) { (data, response, error) in
+                    if error == nil {
+
+                        print("PAYMENT SUCCEDED")
+                        completion(PKPaymentAuthorizationStatus.success)
+
+                    }
+                    else {
+
+                        print("PAYMENT FAILED")
+                        completion(PKPaymentAuthorizationStatus.failure)
+
+                    }
+                }
+
+                dataTask.resume()
+                
+            }
+        }
     }
     
 }

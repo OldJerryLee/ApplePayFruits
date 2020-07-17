@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		6126794C24B7F19E00E1EB41 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6126794B24B7F19E00E1EB41 /* FruitCell.swift */; };
 		6126794E24B7FE1F00E1EB41 /* FruitListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6126794D24B7FE1F00E1EB41 /* FruitListTableViewController.swift */; };
 		6126795024B801C500E1EB41 /* BuyFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6126794F24B801C500E1EB41 /* BuyFruitViewController.swift */; };
+		CFF12654C7D46A98A67702E7 /* Pods_ApplePayFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690712AFE6BC7C681BE069A6 /* Pods_ApplePayFruits.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,11 @@
 		6126794B24B7F19E00E1EB41 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
 		6126794D24B7FE1F00E1EB41 /* FruitListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FruitListTableViewController.swift; path = ApplePayFruits/View/FruitListTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		6126794F24B801C500E1EB41 /* BuyFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyFruitViewController.swift; sourceTree = "<group>"; };
+		690712AFE6BC7C681BE069A6 /* Pods_ApplePayFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplePayFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		803B84C224BF7C2600482064 /* ApplePayFruits-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApplePayFruits-Bridging-Header.h"; sourceTree = "<group>"; };
 		806CC90324BB78790033ACC1 /* ApplePayFruits.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ApplePayFruits.entitlements; sourceTree = "<group>"; };
+		92E9144BE7E0D58A01E335B0 /* Pods-ApplePayFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayFruits.release.xcconfig"; path = "Target Support Files/Pods-ApplePayFruits/Pods-ApplePayFruits.release.xcconfig"; sourceTree = "<group>"; };
+		9B1C6A5722E0C3C5ADEDCDB3 /* Pods-ApplePayFruits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayFruits.debug.xcconfig"; path = "Target Support Files/Pods-ApplePayFruits/Pods-ApplePayFruits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF12654C7D46A98A67702E7 /* Pods_ApplePayFruits.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +55,8 @@
 			children = (
 				6126793124B7EF0400E1EB41 /* ApplePayFruits */,
 				6126793024B7EF0400E1EB41 /* Products */,
+				B7DE464B138B2241D78BE846 /* Pods */,
+				D51B53A8F24EC74799CCAB59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +81,7 @@
 				6126793B24B7EF0800E1EB41 /* Assets.xcassets */,
 				6126793D24B7EF0800E1EB41 /* LaunchScreen.storyboard */,
 				6126794024B7EF0800E1EB41 /* Info.plist */,
+				803B84C224BF7C2600482064 /* ApplePayFruits-Bridging-Header.h */,
 			);
 			path = ApplePayFruits;
 			sourceTree = "<group>";
@@ -102,6 +111,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B7DE464B138B2241D78BE846 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B1C6A5722E0C3C5ADEDCDB3 /* Pods-ApplePayFruits.debug.xcconfig */,
+				92E9144BE7E0D58A01E335B0 /* Pods-ApplePayFruits.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D51B53A8F24EC74799CCAB59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				690712AFE6BC7C681BE069A6 /* Pods_ApplePayFruits.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6126794324B7EF0800E1EB41 /* Build configuration list for PBXNativeTarget "ApplePayFruits" */;
 			buildPhases = (
+				8DCFDA070A5061F4E9915F6B /* [CP] Check Pods Manifest.lock */,
 				6126792B24B7EF0400E1EB41 /* Sources */,
 				6126792C24B7EF0400E1EB41 /* Frameworks */,
 				6126792D24B7EF0400E1EB41 /* Resources */,
+				6FEA8A2D6B55DD60F806DD04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +195,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FEA8A2D6B55DD60F806DD04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplePayFruits/Pods-ApplePayFruits-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplePayFruits/Pods-ApplePayFruits-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApplePayFruits/Pods-ApplePayFruits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DCFDA070A5061F4E9915F6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplePayFruits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6126792B24B7EF0400E1EB41 /* Sources */ = {
@@ -320,11 +390,17 @@
 		};
 		6126794424B7EF0800E1EB41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B1C6A5722E0C3C5ADEDCDB3 /* Pods-ApplePayFruits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ApplePayFruits/ApplePayFruits.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NP5AK64M5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					STRIPE_ENABLE_APPLEPAY,
+				);
 				INFOPLIST_FILE = ApplePayFruits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appFruitsTest.ApplePayFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ApplePayFruits/ApplePayFruits-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,11 +417,17 @@
 		};
 		6126794524B7EF0800E1EB41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92E9144BE7E0D58A01E335B0 /* Pods-ApplePayFruits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ApplePayFruits/ApplePayFruits.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NP5AK64M5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					STRIPE_ENABLE_APPLEPAY,
+				);
 				INFOPLIST_FILE = ApplePayFruits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -353,6 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appFruitsTest.ApplePayFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ApplePayFruits/ApplePayFruits-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
